@@ -1,0 +1,35 @@
+websocktes:
+
+full duplex communication- send information back and forth naitive in the browser.   
+
+like a chat room- multiuser a web socket maked one call- and keeps the communication open.
+
+
+var io= require('socket.io');   a library not build into nodejs                          
+socket is our server
+
+expecting something from one another both client and server have to be .on
+if we want to send something to the server both the client and the server have to be .emit
+
+socket.on- i can recieve information from my client' expecting info from our clients
+
+socket our client
+
+
+
+server code:
+
+socket.on ("mani talk to me", function(data){
+
+console.log("user passed this ::"+ data);
+var result = data.number +3;
+
+socket.emit("result",{number:result});
+
+});
+
+
+client code:
+
+
+broadcasting is emting to several sockets- connnections
