@@ -1,6 +1,0 @@
-[submodule "decodeHER"]
-	path = decodeHER
-	url = git@github.com:navit/decodeHER.git
-[submodule "dynamicInterfaces"]
-	path = dynamicInterfaces
-	url = git@github.com:navit/dynamicInterfaces.git
